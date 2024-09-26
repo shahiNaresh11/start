@@ -1,4 +1,21 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
+
+:root {
+  --primary-color: #004687;
+  --secondary-color: #bd9b60;
+  --third-color: #FFF0F5;
+}
+
+
+
+
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +52,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
