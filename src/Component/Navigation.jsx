@@ -4,13 +4,36 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Navigation() {
   return (
-    <div className="nav-bar">
-      <div className="head" style={{ display: "flex", alignItems: "center" }}>
+    <div
+      className="nav-bar"
+      style={{
+        // Leave space for the sidebar from the left (150px)
+
+        padding: '10px',
+        backgroundColor: 'goldenrod',
+        boxShadow: '0 2px 5px rgba(0, 0, 0, 0.1)',
+        height: '100px',
+        display: 'flex',
+        alignItems: 'center',
+      }}
+    >
+      <div
+        className="head"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginLeft: "auto",
+        }}
+      >
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHfd3PPulVSp4ZbuBFNkePoUR_fLJQe474Ag&s"
           alt="Avatar"
           className="nav-photo"
-          style={{ marginRight: "10px" }}
+          style={{
+            marginRight: "10px",
+            borderRadius: '50%',
+            height: '40px',
+          }}
         />
         <div className="dropdown">
           <a
@@ -24,7 +47,10 @@ export default function Navigation() {
             User
           </a>
 
-          <ul className="dropdown-menu dropdown-menu-dark text-small shadow" aria-labelledby="dropdownMenuButton">
+          <ul
+            className="dropdown-menu dropdown-menu-dark text-small shadow"
+            aria-labelledby="dropdownMenuButton"
+          >
             <li>
               <a className="dropdown-item" href="#">
                 Settings
@@ -40,11 +66,6 @@ export default function Navigation() {
             </li>
           </ul>
         </div>
-      </div>
-      <div className="jawaflix colepalmer nikowillem ">
-        <div className="jexsion"> </div>
-        <p></p>
-
       </div>
     </div>
   );
